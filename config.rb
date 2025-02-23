@@ -62,6 +62,8 @@ configure :build do
   activate :minify_javascript, compressor: Terser.new
 
   activate :asset_hash
+
+  set :http_prefix, '/morgane-latouche'
 end
 
 # Default variables
