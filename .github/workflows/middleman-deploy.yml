@@ -20,7 +20,7 @@ env:
 
 jobs:
   deploy:
-    if: ${{ vars.ENVIRONMENT }} == 'production'
+    if: ${{ vars.ENVIRONMENT == 'production'}}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
