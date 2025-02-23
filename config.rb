@@ -77,7 +77,7 @@ configure :development do
 end
 
 configure :staging do
-  config[:base_url] = ENV.fetch('BASE_URL', 'https://fcatuhe.github.io/morgane-latouche.fr/')
+  config[:base_url] = ENV.fetch('BASE_URL', 'https://fcatuhe.github.io/morgane-latouche')
 end
 
 configure :production do
