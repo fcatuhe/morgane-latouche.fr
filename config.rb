@@ -5,14 +5,6 @@ activate :autoprefixer do |prefix|
   prefix.browsers = 'last 2 versions'
 end
 
-activate :blog do |blog|
-  blog.name = 'Dans ma Bibliothèque'
-  blog.prefix = 'bibliotheque'
-  blog.sources = '{slug}.html'
-  blog.permalink = '{slug}.html'
-  blog.layout = 'book'
-end
-
 activate :livereload
 
 set :css_dir, 'stylesheets'
@@ -32,8 +24,6 @@ page '/*.txt', layout: false
 
 # With alternative layout
 page '/index.html', layout: 'home'
-page '/voyage-au-coeur-d-une-seance.html', layout: 'curious'
-page '/bibliotheque.html', layout: 'curious'
 
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
@@ -77,7 +67,6 @@ end
 # Default variables
 config[:robots_content] = 'noindex, nofollow'
 config[:robots_partial] = 'robots_staging'
-config[:newsletter_subscription_url] = 'https://patoumatic.fr/newsletters/4/subscribers'
 
 # Environment specific configuration, variables and overrides
 configure :development do
@@ -88,12 +77,11 @@ configure :development do
 end
 
 configure :staging do
-  config[:base_url] = ENV.fetch('BASE_URL', 'https://staging.raphaele-rodellar.fr')
+  config[:base_url] = ENV.fetch('BASE_URL', 'https://staging.morgane-latouche.fr')
 end
 
 configure :production do
-  config[:base_url] = ENV.fetch('BASE_URL', 'https://raphaele-rodellar.fr')
+  config[:base_url] = ENV.fetch('BASE_URL', 'https://morgane-latouche.fr')
   config[:robots_content] = 'index, follow'
   config[:robots_partial] = 'robots_production'
-  config[:newsletter_subscription_url] = 'https://patoumatic.fr/newsletters/1/subscribers'
 end

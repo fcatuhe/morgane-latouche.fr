@@ -1,14 +1,13 @@
-@import 'vendor/rfs/scss';
-@import 'breakpoints';
+@import "vendor/rfs/scss";
+@import "breakpoints";
 
-@import 'fonts';
-@import 'colors';
+@import "fonts";
+@import "colors";
 
-@import 'navbar';
-@import 'bookcase';
+@import "navbar";
 
 body {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 $height-navbar: 3.5rem;
@@ -33,16 +32,16 @@ section {
 
 .height-logo {
   @include rfs(7rem, height);
-  @media (min-width: map-get($grid-breakpoints, 'sm')) {
+  @media (min-width: map-get($grid-breakpoints, "sm")) {
     @include rfs(5rem, height);
   }
-  @media (min-width: map-get($grid-breakpoints, 'lg')) {
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
     @include rfs(4rem, height);
   }
 }
 
 .py-lg-6 {
-  @media (min-width: map-get($grid-breakpoints, 'lg')) {
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
     padding-top: 6rem !important;
     padding-bottom: 6rem !important;
   }
@@ -52,7 +51,7 @@ h1,
 h2,
 .h1,
 .h2 {
-  font-family: 'Ranille';
+  font-family: "Ranille";
   color: color(blue);
 }
 h1,
@@ -76,7 +75,7 @@ h1,
   .h2,
   h3,
   .h3 {
-    font-family: 'Montserrat SemiBold';
+    font-family: "Montserrat SemiBold";
   }
   h1,
   .h1 {
@@ -133,7 +132,7 @@ h1,
 
 .btn-cta {
   display: inline-block;
-  font-family: 'Gotham Black';
+  font-family: "Gotham Black";
   @include padding(1rem 1.5rem);
   @include font-size(1rem);
   @include rfs(0.25rem, letter-spacing);
@@ -163,25 +162,25 @@ h1,
 }
 
 #raphaele {
-  background-image: image-url('raphaele_rodellar_reflexologie_plantaire_bordeaux.jpg');
+  background-image: image-url("raphaele_rodellar_reflexologie_plantaire_bordeaux.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
   min-height: 80vw;
-  @media (min-width: map-get($grid-breakpoints, 'lg')) {
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
     min-height: 50vh;
   }
 }
 
 #practice {
-  background-image: image-url('raphaele_rodellar_therapeute_reflexologue_bordeaux.jpg');
+  background-image: image-url("raphaele_rodellar_therapeute_reflexologue_bordeaux.jpg");
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
   height: 100%;
   min-height: 80vw;
-  @media (min-width: map-get($grid-breakpoints, 'lg')) {
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
     min-height: 50vh;
   }
 }
@@ -235,7 +234,7 @@ h1,
     width: 12vw;
     transform: rotate(20deg);
   }
-  @media (min-width: map-get($grid-breakpoints, 'sm')) {
+  @media (min-width: map-get($grid-breakpoints, "sm")) {
     &-shape-green-light {
       top: -9.5vw;
     }
@@ -249,7 +248,7 @@ h1,
       top: 4vw;
     }
   }
-  @media (min-width: map-get($grid-breakpoints, 'lg')) {
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
     &-shape-green-light {
       top: -13.5vw;
     }
@@ -285,7 +284,7 @@ h1,
     width: 18vw;
     transform: rotateX(0.5turn) rotate(130deg);
   }
-  @media (min-width: map-get($grid-breakpoints, 'sm')) {
+  @media (min-width: map-get($grid-breakpoints, "sm")) {
     &-shape-blue {
       bottom: -13vw;
     }
@@ -296,7 +295,7 @@ h1,
       bottom: -18vw;
     }
   }
-  @media (min-width: map-get($grid-breakpoints, 'lg')) {
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
     &-shape-blue {
       bottom: -4vw;
     }
@@ -307,7 +306,7 @@ h1,
       bottom: -9vw;
     }
   }
-  @media (min-width: map-get($grid-breakpoints, 'xxl')) {
+  @media (min-width: map-get($grid-breakpoints, "xxl")) {
     &-shape-blue {
       bottom: -8vw;
     }
@@ -358,7 +357,7 @@ h1,
 .voyage {
   h2,
   .h2 {
-    font-family: 'Montserrat SemiBold';
+    font-family: "Montserrat SemiBold";
     text-transform: uppercase;
     @include font-size(1.25rem);
   }
