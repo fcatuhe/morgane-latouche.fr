@@ -62,8 +62,6 @@ configure :build do
   activate :minify_javascript, compressor: Terser.new
 
   activate :asset_hash
-
-  set :http_prefix, '/morgane-latouche'
 end
 
 # Default variables
@@ -79,7 +77,8 @@ configure :development do
 end
 
 configure :staging do
-  config[:base_url] = ENV.fetch('BASE_URL', 'https://fcatuhe.github.io/morgane-latouche/')
+  config[:base_url] = ENV.fetch('BASE_URL', 'https://fcatuhe.github.io/morgane-latouche.fr')
+  set :http_prefix, '/morgane-latouche.fr'
 end
 
 configure :production do
