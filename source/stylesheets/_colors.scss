@@ -38,10 +38,10 @@ $colors: (
 @each $name, $color in $colors {
   .color-block-half-left-#{$name} {
     position: absolute;
-    top: -2rem; /* Décalage vertical */
+    top: -3rem; /* Décalage vertical */
     right: 45%; /* Décalage horizontal */
     width: 100%; /* Largeur du rectangle */
-    height: calc(100% + 4rem); /* Hauteur du rectangle */
+    height: calc(100% + 6rem); /* Hauteur du rectangle */
     background-color: $color; /* Utilisation de la palette */
     z-index: 0; /* Derrière l'image */
   }
@@ -60,10 +60,10 @@ $colors: (
 @each $name, $color in $colors {
   .color-block-half-right-#{$name} {
     position: absolute;
-    top: -2rem; /* Décalage vertical */
+    top: -3rem; /* Décalage vertical */
     right: -45%; /* Décalage horizontal */
     width: 100%; /* Largeur du rectangle */
-    height: calc(100% + 4rem); /* Hauteur du rectangle */
+    height: calc(100% + 6rem); /* Hauteur du rectangle */
     background-color: $color; /* Utilisation de la palette */
     z-index: 0; /* Derrière l'image */
   }
