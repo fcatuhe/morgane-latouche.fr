@@ -1,11 +1,11 @@
 $colors: (
-  coral: #e9492c,
-  green: #0a7571,
-  green-light: #6abea2,
-  pink: #f08a8d,
-  blue: #3056a3,
-  pink-light: #fae1e1,
-  cream: #f7efdc,
+  chocolate: #792D15,
+  wood: #966037,
+  wood-light: #B18665,
+  rust: #DC6E1A,
+  beige: #FFF6EA,
+  eucalyptus: #C8DFC1,
+  off-white: #FAF9F6
 );
 
 @function color($name) {
@@ -33,4 +33,38 @@ $colors: (
 // Shade a color: mix a color with black
 @function shade-color($color, $weight) {
   @return mix(black, $color, $weight);
+}
+
+@each $name, $color in $colors {
+  .color-block-half-left-#{$name} {
+    position: absolute;
+    top: -2.5%;        /* Décalage vertical */
+    left: -45%;       /* Décalage horizontal */
+    width: 100%;      /* Largeur du rectangle */
+    height: 105%;     /* Hauteur du rectangle */
+    background-color: $color; /* Utilisation de la palette */
+    z-index: 0;       /* Derrière l'image */
+  }
+}
+@each $name, $color in $colors {
+  .color-block-bottom-left-#{$name} {
+    position: absolute;
+    top: 20%;        /* Décalage vertical */
+    left: -50%;       /* Décalage horizontal */
+    width: 100%;      /* Largeur du rectangle */
+    height: 82.5%;     /* Hauteur du rectangle */
+    background-color: $color; /* Utilisation de la palette */
+    z-index: 0;       /* Derrière l'image */
+  }
+}
+@each $name, $color in $colors {
+  .color-block-half-right-#{$name} {
+    position: absolute;
+    top: -2.5%;        /* Décalage vertical */
+    right: -45%;       /* Décalage horizontal */
+    width: 100%;      /* Largeur du rectangle */
+    height: 105%;     /* Hauteur du rectangle */
+    background-color: $color; /* Utilisation de la palette */
+    z-index: 0;       /* Derrière l'image */
+  }
 }

@@ -1,20 +1,26 @@
-@import 'gotham-black';
-@import 'montserrat-regular';
-@import 'montserrat-semibold';
-@import 'ranille';
+@import 'caveat';
+@import 'crimson-text-bold';
+@import 'crimson-text-regular';
+@import 'crimson-text-semibold';
 
-.gotham-black {
-  font-family: 'Gotham Black';
+.caveat-regular {
+  font-family: 'Caveat';
+  font-weight: 400;
 }
 
-.montserrat {
-  font-family: 'Montserrat';
+.caveat-bold {
+  font-family: 'Caveat';
+  font-weight: 700;
 }
 
-.montserrat-semibold {
-  font-family: 'Montserrat SemiBold';
+.crimson-text-bold {
+  font-family: 'Crimson Text Bold';
 }
 
-.ranille {
-  font-family: 'Ranille';
+.crimson-text-regular {
+  font-family: 'Crimson Text Regular';
+}
+
+.crimson-text-semibold {
+  font-family: 'Crimson Text SemiBold';
 }

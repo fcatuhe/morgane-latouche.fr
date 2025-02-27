@@ -6,10 +6,6 @@
 
 @import "navbar";
 
-body {
-  font-family: "Montserrat";
-}
-
 $height-navbar: 3.5rem;
 .navbar {
   height: $height-navbar;
@@ -48,55 +44,34 @@ section {
 }
 
 h1,
-h2,
-.h1,
-.h2 {
-  font-family: "Ranille";
-  color: color(blue);
-}
-h1,
 .h1 {
+  margin: 1.5rem;
+  text-align: center;
+  @include font-size(3.5rem);
+}
+
+h2,
+.h2 {
   margin: 1.5rem;
   text-align: center;
   @include font-size(3rem);
 }
+
+h3,
+.h3 {
+  margin: 1.5rem;
+  text-align: center;
+  @include font-size(2.75rem);
+}
+
 .home {
-  h1,
-  h2,
-  .h1,
-  .h2 {
-    @include font-size(4rem);
-  }
-}
-.book {
-  h1,
-  .h1,
-  h2,
-  .h2,
-  h3,
-  .h3 {
-    font-family: "Montserrat SemiBold";
-  }
-  h1,
-  .h1 {
-    @include font-size(2rem);
+  p {
     text-align: start;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0.5rem;
-  }
-  h2,
-  .h2 {
-    @include font-size(1.5rem);
-    margin-bottom: 0.5rem;
-  }
-  h3,
-  .h3 {
-    @include font-size(1rem);
+    @include font-size(1.25rem);
   }
 }
+
+
 
 .text-wrap-balance {
   text-wrap: balance;
@@ -130,82 +105,40 @@ h1,
   cursor: pointer;
 }
 
-.btn-cta {
-  display: inline-block;
-  font-family: "Gotham Black";
-  @include padding(1rem 1.5rem);
-  @include font-size(1rem);
-  @include rfs(0.25rem, letter-spacing);
-  text-transform: uppercase;
-  text-decoration: none;
-  color: color(pink);
-  border-radius: 3rem;
-  box-shadow: 0.25rem 0.25rem color(pink);
-  background-color: color(blue);
-  border-color: color(blue);
-  transition: all 0.3s linear;
-  &:hover {
-    box-shadow: 0 0 color(pink);
-    transition: all 0.3s linear;
-  }
-
-  &-shop {
-    color: color(cream);
-    border-radius: 3rem;
-    box-shadow: 0.25rem 0.25rem color(cream);
-    background-color: color(pink);
-    border-color: color(pink);
-  }
-  &:hover {
-    box-shadow: 0 0 color(cream);
-  }
-}
-
-#raphaele {
-  background-image: image-url("raphaele_rodellar_reflexologie_plantaire_bordeaux.jpg");
-  background-size: cover;
+#morgane {
+  background-image: image-url("morgane_latouche_reflexologue_cancale.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  height: 100%;
+  background-size: contain;
   min-height: 80vw;
   @media (min-width: map-get($grid-breakpoints, "lg")) {
-    min-height: 50vh;
+    min-height: 90vh;
   }
 }
-
-#practice {
-  background-image: image-url("raphaele_rodellar_therapeute_reflexologue_bordeaux.jpg");
-  background-size: cover;
-  background-position: bottom center;
+#cabinet {
+  background-image: image-url("morgane_latouche_reflexologue_cabinet_cancale.jpg");
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   height: 100%;
   min-height: 80vw;
   @media (min-width: map-get($grid-breakpoints, "lg")) {
-    min-height: 50vh;
+    min-height: 90vh;
+  }
+}
+#pieds {
+  background-image: image-url("morgane_latouche_reflexologie_plantaire_cancale.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  min-height: 80vw;
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
+    min-height: 90vh;
   }
 }
 
-.header {
-  &-shape-pink-light {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 15vw;
-  }
-  &-dot-coral {
-    position: absolute;
-    bottom: 3.5vw;
-    left: 10vw;
-    width: 8vw;
-  }
-  &-shape-blue {
-    position: absolute;
-    bottom: -8vw;
-    left: 0;
-    width: 25vw;
-    transform: rotateY(0.5turn);
-  }
-}
+
 .section4 {
   &-shape-green-light {
     position: absolute;
@@ -261,138 +194,5 @@ h1,
     &-shapelet-pink-light {
       top: 0;
     }
-  }
-}
-.section5 {
-  &-shape-blue {
-    position: absolute;
-    bottom: -8vw;
-    left: -3vw;
-    width: 25vw;
-    transform: rotate(155deg);
-  }
-  &-dot-coral {
-    position: absolute;
-    bottom: -5vw;
-    left: 15vw;
-    width: 8vw;
-  }
-  &-shape-green-light {
-    position: absolute;
-    bottom: -13vw;
-    left: -3vw;
-    width: 18vw;
-    transform: rotateX(0.5turn) rotate(130deg);
-  }
-  @media (min-width: map-get($grid-breakpoints, "sm")) {
-    &-shape-blue {
-      bottom: -13vw;
-    }
-    &-dot-coral {
-      bottom: -10vw;
-    }
-    &-shape-green-light {
-      bottom: -18vw;
-    }
-  }
-  @media (min-width: map-get($grid-breakpoints, "lg")) {
-    &-shape-blue {
-      bottom: -4vw;
-    }
-    &-dot-coral {
-      bottom: -1vw;
-    }
-    &-shape-green-light {
-      bottom: -9vw;
-    }
-  }
-  @media (min-width: map-get($grid-breakpoints, "xxl")) {
-    &-shape-blue {
-      bottom: -8vw;
-    }
-    &-dot-coral {
-      bottom: -5vw;
-    }
-    &-shape-green-light {
-      bottom: -13vw;
-    }
-  }
-}
-
-.btn-rr-primary {
-  --bs-btn-color: var(--bs-white);
-  --bs-btn-bg: #{color(blue)};
-  --bs-btn-border-color: #{color(blue)};
-  --bs-btn-hover-color: var(--bs-white);
-  --bs-btn-hover-bg: #{shade-color(color(blue), 10%)};
-  --bs-btn-hover-border-color: #{shade-color(color(blue), 10%)};
-  // --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-  --bs-btn-active-color: var(--bs-btn-hover-color);
-  --bs-btn-active-bg: #{shade-color(color(blue), 20%)};
-  --bs-btn-active-border-color: #{shade-color(color(blue), 20%)};
-}
-
-.alert {
-  --bs-alert-padding-y: 0.5rem;
-  &-success {
-    --bs-alert-color: #{shade-color(color(green), 20%)};
-    --bs-alert-link-color: #{shade-color(color(green), 20%)};
-    --bs-alert-border-color: #{tint-color(color(green-light), 70%)};
-    --bs-alert-bg: #{tint-color(color(green-light), 70%)};
-  }
-  &-dismissible .btn-close {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
-  .btn-close {
-    --bs-btn-close-bg: none;
-  }
-}
-
-.opacity-10 {
-  opacity: 0.1 !important;
-}
-
-.voyage {
-  h2,
-  .h2 {
-    font-family: "Montserrat SemiBold";
-    text-transform: uppercase;
-    @include font-size(1.25rem);
-  }
-  .overlay .h2 {
-    font-size: calc(0.7rem + 0.5vw);
-  }
-  .modal-dialog h2 {
-    @include font-size(0.9rem);
-  }
-}
-
-.flip-card {
-  transition: 0.5s;
-  transform-style: preserve-3d;
-  position: relative;
-
-  &.flipped {
-    transform: rotateY(180deg);
-  }
-
-  .front,
-  .back {
-    backface-visibility: hidden;
-    .overlay {
-      position: absolute;
-      top: calc(50% + 0.5rem);
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 90%;
-    }
-  }
-
-  .back {
-    position: absolute;
-    top: 0;
-    transform: rotateY(180deg);
   }
 }
