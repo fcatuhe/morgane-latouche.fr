@@ -2,12 +2,17 @@
 @import 'crimson-text-bold';
 @import 'crimson-text-regular';
 @import 'crimson-text-semibold';
+@import 'notosans';
+@import 'notosans-italic';
+@import 'playfair';
+@import 'playfair-italic';
+@import 'playfairdisplay';
+@import 'playfairdisplay-italic';
 
 .caveat-regular {
   font-family: 'Caveat';
   font-weight: 400;
 }
-
 .caveat-bold {
   font-family: 'Caveat';
   font-weight: 700;
@@ -16,11 +21,84 @@
 .crimson-text-bold {
   font-family: 'Crimson Text Bold';
 }
-
 .crimson-text-regular {
   font-family: 'Crimson Text Regular';
 }
-
 .crimson-text-semibold {
   font-family: 'Crimson Text SemiBold';
+}
+
+.notosans-regular {
+  font-family: 'Noto Sans';
+  font-weight: 400;
+}
+.notosans-semibold {
+  font-family: 'Noto Sans';
+  font-weight: 600;
+}
+.notosans-bold {
+  font-family: 'Noto Sans';
+  font-weight: 700;
+}
+.notosans-italic-regular {
+  font-family: 'Noto Sans Italic';
+  font-weight: 400;
+}
+.notosans-italic-semibold {
+  font-family: 'Noto Sans Italic';
+  font-weight: 600;
+}
+.notosans-italic-bold {
+  font-family: 'Noto Sans Italic';
+  font-weight: 700;
+}
+
+.playfair-regular {
+  font-family: 'Playfair';
+  font-weight: 400;
+}
+.playfair-semibold {
+  font-family: 'Playfair';
+  font-weight: 600;
+}
+.playfair-bold {
+  font-family: 'Playfair';
+  font-weight: 700;
+}
+.playfair-italic-regular {
+  font-family: 'Playfair Italic';
+  font-weight: 400;
+}
+.playfair-italic-semibold {
+  font-family: 'Playfair Italic';
+  font-weight: 600;
+}
+.playfair-italic-bold {
+  font-family: 'Playfair Italic';
+  font-weight: 700;
+}
+
+.playfairdisplay-regular {
+  font-family: 'Playfair Display';
+  font-weight: 400;
+}
+.playfairdisplay-semibold {
+  font-family: 'Playfair Display';
+  font-weight: 600;
+}
+.playfairdisplay-bold {
+  font-family: 'Playfair Display';
+  font-weight: 700;
+}
+.playfairdisplay-italic-regular {
+  font-family: 'Playfair Display Italic';
+  font-weight: 400;
+}
+.playfairdisplay-italic-semibold {
+  font-family: 'Playfair Display Italic';
+  font-weight: 600;
+}
+.playfairdisplay-italic-bold {
+  font-family: 'Playfair Display Italic';
+  font-weight: 700;
 }

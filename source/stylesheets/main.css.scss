@@ -47,28 +47,33 @@ h1,
 .h1 {
   margin: 1.5rem;
   text-align: center;
-  @include font-size(3.5rem);
+  @include font-size(2.5rem);
 }
 
 h2,
 .h2 {
   margin: 1.5rem;
   text-align: center;
-  @include font-size(3rem);
+  @include font-size(2.25rem);
 }
 
 h3,
 .h3 {
   margin: 1.5rem;
   text-align: center;
-  @include font-size(2.75rem);
+  line-height: 1.75em;
+  @include font-size(1.75rem);
 }
 
 .home {
   p {
     text-align: start;
-    @include font-size(1.25rem);
+    @include font-size(1rem);
   }
+}
+
+.footer {
+  @include font-size(0.85rem);
 }
 
 .text-wrap-balance {

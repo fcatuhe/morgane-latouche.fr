@@ -1,11 +1,18 @@
 $colors: (
+  ebony: #42180B,
+  chocolate-dark: #5E2311,
   chocolate: #792d15,
   wood: #966037,
-  wood-light: #b18665,
-  rust: #dc6e1a,
-  beige: #fff6ea,
-  eucalyptus: #c8dfc1,
-  off-white: #faf9f6,
+  wood-light: #b18665, /* unused */
+  jute: #DBC8B0,
+  terracotta-dark: #C3472C,
+  terracotta: #d15e2d,
+  terracotta-light: #FE6544,
+  rust: #dc6e1a, /* unused */
+  beige: #fff6ea, /* unused */
+  eucalyptus: #c8dfc1, /* unused */
+  forest: #41932A,
+  off-white: #faf9f6
 );
 
 @function color($name) {
