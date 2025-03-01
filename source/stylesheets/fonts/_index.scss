@@ -8,6 +8,7 @@
 @import 'playfair-italic';
 @import 'playfairdisplay';
 @import 'playfairdisplay-italic';
+@import 'mistral';
 
 .caveat-regular {
   font-family: 'Caveat';
@@ -101,4 +102,8 @@
 .playfairdisplay-italic-bold {
   font-family: 'Playfair Display Italic';
   font-weight: 700;
+}
+
+.mistral {
+  font-family: 'Mistral';
 }

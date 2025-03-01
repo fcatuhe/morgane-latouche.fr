@@ -1,13 +1,13 @@
-<nav id="navbar" class="bg-off-white fixed-top">
+<nav id="navbar" class="bg-off-white fixed-top z-2">
   <div class="container-fluid py-2">
     <div class="d-flex justify-content-between align-items-center">
       <a
         class="p-lg-0 mx-lg-3"
         href="<%= root_url_or_scroll_to_top(current_page.url) %>"
       >
-        <%= image_tag('logo_morgane_latouche_reflexologie_plantaire.png', alt: 'Morgane Latouche', class: 'height-navbar') %>
+        <%= image_tag('logo_morgane_latouche_reflexologie_plantaire.png', alt: 'Morgane Latouche', id: 'navbarLogo', class: 'height-navbar') %>
       </a>
-      <div class="no-scrollspy p-lg-0 mx-lg-3 playfair-semibold fs-2 text-ebony text-uppercase">
+      <div class="no-scrollspy p-lg-0 mx-lg-3 mistral text-ebony z-2" style="font-size:38px;">
         Morgane Crec'hmine Latouche
       </div>
       <a

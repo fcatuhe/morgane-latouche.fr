@@ -16,7 +16,7 @@ $height-navbar: 3.5rem;
 }
 main {
   padding-top: $height-navbar;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 section {
   scroll-margin-top: $height-navbar;
@@ -54,7 +54,7 @@ h2,
 .h2 {
   margin: 1.5rem;
   text-align: center;
-  @include font-size(2.25rem);
+  @include font-size(2.5rem);
 }
 
 h3,
@@ -139,6 +139,19 @@ h3,
   @media (min-width: map-get($grid-breakpoints, "lg")) {
     min-height: 40vw;
   }
+}
+
+#navbarLogo {
+  opacity: 0;
+}
+
+.overflow-logo {
+  position: absolute;
+  top: -7rem;
+  left: -2rem;
+  z-index: 3;
+  opacity: 0.5;
+  width: 25%;
 }
 
 .section4 {
