@@ -1,17 +1,17 @@
-<nav id="navbar" class="bg-off-white fixed-top z-2">
-  <div class="container-fluid py-2">
+<nav id="navbar" class="bg-off-white">
+  <div class="container-fluid py-3">
     <div class="d-flex justify-content-between align-items-center">
       <a
-        class="p-lg-0 mx-lg-3"
+        class="p-lg-0 mx-lg-3 d-none d-lg-block"
         href="<%= root_url_or_scroll_to_top(current_page.url) %>"
       >
         <%= image_tag('logo_morgane_latouche_reflexologie_plantaire.png', alt: 'Morgane Latouche', id: 'navbarLogo', class: 'height-navbar') %>
       </a>
-      <div class="no-scrollspy p-lg-0 mx-lg-3 playfair-semibold text-uppercase fs-2 text-ebony z-2" style="font-size:38px;">
+      <div class="text-ebony h2 m-0">
         Morgane Crec'hmine Latouche
       </div>
       <a
-        class="badge rounded-pill text-bg-terracotta notosans-regular text-decoration-none px-3 footer"
+        class="badge rounded-pill text-bg-wood-light notosans-semibold text-decoration-none px-3 py-2 text-small"
         href="<%= site_url('#prendrerdv') %>"
       >
         Réserver

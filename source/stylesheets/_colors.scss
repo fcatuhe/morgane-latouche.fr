@@ -1,17 +1,12 @@
 $colors: (
   ebony: #42180B,
-  chocolate-dark: #5E2311,
-  chocolate: #792d15,
-  wood: #966037,
-  wood-light: #b18665, /* unused */
+  chocolate-dark: #5E2311, /* unused */
+  chocolate: #792d15, /* unused */
+  wood: #885A38,
+  wood-light: #FAE5D0,
+  wood-light-dark: #EECAA7,
   jute: #DBC8B0,
-  terracotta-dark: #C3472C,
-  terracotta: #d15e2d,
-  terracotta-light: #FE6544,
-  rust: #dc6e1a, /* unused */
-  beige: #fff6ea, /* unused */
-  eucalyptus: #c8dfc1, /* unused */
-  forest: #41932A,
+  jute-dark: #D3C2AC,
   off-white: #faf9f6
 );
 
@@ -27,7 +22,7 @@ $colors: (
     background-color: $color;
   }
   .text-bg-#{$name} {
-    color: white;
+    color: color(ebony);
     background-color: $color;
   }
 }
@@ -43,7 +38,33 @@ $colors: (
 }
 
 @each $name, $color in $colors {
-  .color-block-half-left-#{$name} {
+  .color-block-one-#{$name} {
+    position: absolute;
+    top: -3rem; /* Décalage vertical */
+    right: 45%; /* Décalage horizontal */
+    width: 100%; /* Largeur du rectangle */
+    height: calc(100% + 6rem); /* Hauteur du rectangle */
+    background-color: $color; /* Utilisation de la palette */
+    z-index: 0; /* Derrière l'image */
+  }
+}
+@each $name, $color in $colors {
+  .color-block-two-#{$name} {
+    position: absolute;
+    top: -1.5rem; /* Décalage vertical */
+    right: 45%; /* Décalage horizontal */
+    width: 100%; /* Largeur du rectangle */
+    height: calc(100% + 3rem); /* Hauteur du rectangle */
+    background-color: $color; /* Utilisation de la palette */
+    z-index: 0; /* Derrière l'image */
+    @media (min-width: map-get($grid-breakpoints, "lg")) {
+      top: -3rem; /* Décalage vertical */
+      height: calc(100% + 6rem); /* Hauteur du rectangle */
+    }
+  }
+}
+@each $name, $color in $colors {
+  .color-block-three-#{$name} {
     position: absolute;
     top: -3rem; /* Décalage vertical */
     right: 45%; /* Décalage horizontal */
@@ -57,7 +78,7 @@ $colors: (
   .color-block-bottom-left-#{$name} {
     position: absolute;
     top: 2rem; /* Décalage vertical */
-    left: -50%; /* Décalage horizontal */
+    right: 45%; /* Décalage horizontal */
     width: 100%; /* Largeur du rectangle */
     height: calc(100% + 2rem); /* Hauteur du rectangle */
     background-color: $color; /* Utilisation de la palette */
@@ -68,7 +89,7 @@ $colors: (
   .color-block-half-right-#{$name} {
     position: absolute;
     top: -3rem; /* Décalage vertical */
-    right: -45%; /* Décalage horizontal */
+    right: 45%; /* Décalage horizontal */
     width: 100%; /* Largeur du rectangle */
     height: calc(100% + 6rem); /* Hauteur du rectangle */
     background-color: $color; /* Utilisation de la palette */
