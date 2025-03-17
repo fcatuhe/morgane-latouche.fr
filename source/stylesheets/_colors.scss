@@ -1,10 +1,8 @@
 $colors: (
   ebony: #42180B,
-  chocolate-dark: #5E2311, /* unused */
-  chocolate: #792d15, /* unused */
+  chocolate: #381E0C,
+  chocolate-light: #703810,
   wood: #885A38,
-  wood-light: #FAE5D0,
-  wood-light-dark: #EECAA7,
   jute: #DBC8B0,
   jute-dark: #D3C2AC,
   off-white: #faf9f6
@@ -22,7 +20,7 @@ $colors: (
     background-color: $color;
   }
   .text-bg-#{$name} {
-    color: color(ebony);
+    color: color(off-white);
     background-color: $color;
   }
 }
@@ -38,18 +36,7 @@ $colors: (
 }
 
 @each $name, $color in $colors {
-  .color-block-one-#{$name} {
-    position: absolute;
-    top: -3rem; /* Décalage vertical */
-    right: 45%; /* Décalage horizontal */
-    width: 100%; /* Largeur du rectangle */
-    height: calc(100% + 6rem); /* Hauteur du rectangle */
-    background-color: $color; /* Utilisation de la palette */
-    z-index: 0; /* Derrière l'image */
-  }
-}
-@each $name, $color in $colors {
-  .color-block-two-#{$name} {
+  .color-block-#{$name} {
     position: absolute;
     top: -1.5rem; /* Décalage vertical */
     right: 45%; /* Décalage horizontal */
@@ -61,38 +48,5 @@ $colors: (
       top: -3rem; /* Décalage vertical */
       height: calc(100% + 6rem); /* Hauteur du rectangle */
     }
-  }
-}
-@each $name, $color in $colors {
-  .color-block-three-#{$name} {
-    position: absolute;
-    top: -3rem; /* Décalage vertical */
-    right: 45%; /* Décalage horizontal */
-    width: 100%; /* Largeur du rectangle */
-    height: calc(100% + 6rem); /* Hauteur du rectangle */
-    background-color: $color; /* Utilisation de la palette */
-    z-index: 0; /* Derrière l'image */
-  }
-}
-@each $name, $color in $colors {
-  .color-block-bottom-left-#{$name} {
-    position: absolute;
-    top: 2rem; /* Décalage vertical */
-    right: 45%; /* Décalage horizontal */
-    width: 100%; /* Largeur du rectangle */
-    height: calc(100% + 2rem); /* Hauteur du rectangle */
-    background-color: $color; /* Utilisation de la palette */
-    z-index: 0; /* Derrière l'image */
-  }
-}
-@each $name, $color in $colors {
-  .color-block-half-right-#{$name} {
-    position: absolute;
-    top: -3rem; /* Décalage vertical */
-    right: 45%; /* Décalage horizontal */
-    width: 100%; /* Largeur du rectangle */
-    height: calc(100% + 6rem); /* Hauteur du rectangle */
-    background-color: $color; /* Utilisation de la palette */
-    z-index: 0; /* Derrière l'image */
   }
 }

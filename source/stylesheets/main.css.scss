@@ -38,6 +38,14 @@ h2,
   @include font-size(2.5rem);
 }
 
+h3,
+.h3 {
+  text-align: center;
+  font-family: 'Noto Sans Italic';
+  font-weight: 400;
+  line-height: 1.5em;
+  @include font-size(1.75rem);
+}
 
 .home {
   h1,
@@ -53,6 +61,7 @@ h2,
     margin: 0 0 1rem;
     @media (max-width: map-get($grid-breakpoints, "lg")) {
       margin-top: 3rem;
+      @include font-size(3rem);
     }
   }
 
@@ -60,11 +69,10 @@ h2,
   .h3 {
     margin: 0;
     padding: 2rem 3rem 4rem;
-    text-align: center;
-    font-family: 'Noto Sans Italic';
-    font-weight: 400;
-    line-height: 1.5em;
-    @include font-size(1.75rem);
+    @media (max-width: map-get($grid-breakpoints, "lg")) {
+      @include font-size(1.5rem);
+      padding: 2rem 3rem 3rem;
+    }
   }
 
   p {
@@ -83,6 +91,7 @@ h2,
 }
 
 #morgane {
+  flex-grow: 1;
   background-image: image-url("morgane_latouche_reflexologue_cancale.jpg");
   background-position: center;
   background-size: cover;
@@ -102,6 +111,7 @@ h2,
   }
 }
 #pieds {
+  flex-grow: 1;
   background-image: image-url("morgane_latouche_reflexologie_plantaire_cancale.jpg");
   background-position: left center;
   background-repeat: no-repeat;
