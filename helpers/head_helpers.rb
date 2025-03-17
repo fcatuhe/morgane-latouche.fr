@@ -5,6 +5,6 @@ module HeadHelpers
   end
 
   def description
-    current_page.data.description || "Se mettre à l'écoute de son corps, se relâcher, se relaxer, se recharger, ... Venez profiter de tous les bienfaits de la réflexologie plantaire !"
+    current_page.data.description || "Vous accompagner vers un mieux-vivre grâce à la réflexologie plantaire thérapeutique"
   end
 end
