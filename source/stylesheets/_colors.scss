@@ -1,6 +1,6 @@
 $colors: (
   ebony: #42180B,
-  chocolate: #381E0C,
+  chocolate: #1B0E09,
   chocolate-light: #703810,
   wood: #885A38,
   jute: #DBC8B0,
@@ -39,7 +39,7 @@ $colors: (
   .color-block-#{$name} {
     position: absolute;
     top: -1.5rem; /* Décalage vertical */
-    right: 45%; /* Décalage horizontal */
+    right: 35%; /* Décalage horizontal */
     width: 100%; /* Largeur du rectangle */
     height: calc(100% + 3rem); /* Hauteur du rectangle */
     background-color: $color; /* Utilisation de la palette */
