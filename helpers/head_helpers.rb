@@ -1,7 +1,7 @@
 # Inspired by https://github.com/rails/rails/pull/37918
 module HeadHelpers
   def title
-    [ current_page.data.title.presence, "Morgane Latouche Thérapeute Réflexologue Cancale" ].compact.join(' · ')
+    [ current_page.data.title.presence, "Morgane Crec'hmine Latouche Thérapeute Réflexologue à Cancale" ].compact.join(' · ')
   end
 
   def description

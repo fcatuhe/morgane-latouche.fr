@@ -16,37 +16,29 @@ $colors: (
   .text-#{$name} {
     color: $color;
   }
-  .bg-#{$name} {
-    background-color: $color;
-  }
-  .text-bg-#{$name} {
-    color: color(off-white);
-    background-color: $color;
-  }
 }
 
-// Tint a color: mix a color with white
-@function tint-color($color, $weight) {
-  @return mix(white, $color, $weight);
+.text-bg-chocolate-light {
+  color: color(off-white);
+  background-color: color(chocolate-light);
 }
 
-// Shade a color: mix a color with black
-@function shade-color($color, $weight) {
-  @return mix(black, $color, $weight);
+.bg-off-white {
+  background-color: color(off-white);
 }
 
 @each $name, $color in $colors {
   .color-block-#{$name} {
     position: absolute;
-    top: -1.5rem; /* Décalage vertical */
-    right: 35%; /* Décalage horizontal */
-    width: 100%; /* Largeur du rectangle */
-    height: calc(100% + 3rem); /* Hauteur du rectangle */
-    background-color: $color; /* Utilisation de la palette */
-    z-index: 0; /* Derrière l'image */
+    top: -1.5rem;
+    right: 35%;
+    width: 100%;
+    height: calc(100% + 3rem);
+    background-color: $color;
+    z-index: 0;
     @media (min-width: map-get($grid-breakpoints, "lg")) {
-      top: -3rem; /* Décalage vertical */
-      height: calc(100% + 6rem); /* Hauteur du rectangle */
+      top: -3rem;
+      height: calc(100% + 6rem);
     }
   }
 }
