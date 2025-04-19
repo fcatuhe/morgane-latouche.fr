@@ -1,5 +1,14 @@
-<% wrap_layout :base_layout do %>
-  <main class="container mb-5">
+<!doctype html>
+<html lang="fr">
+  <head><%= partial 'partials/head' %></head>
+
+  <body>
+    <%= partial 'partials/nav' %>
+
+  <main>
     <%= yield %>
   </main>
-<% end %>
+
+    <footer><%= partial 'partials/footer' %></footer>
+  </body>
+</html>

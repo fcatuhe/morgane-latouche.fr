@@ -23,7 +23,7 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 # With alternative layout
-page '/index.html', layout: 'home'
+# page '/index.html', layout: 'home'
 
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
@@ -66,7 +66,7 @@ end
 
 # Default variables
 config[:robots_content] = 'noindex, nofollow'
-config[:robots_partial] = 'robots_staging'
+config[:robots_partial] = 'robots_disallow'
 
 # Environment specific configuration, variables and overrides
 configure :development do
