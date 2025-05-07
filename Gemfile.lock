@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/middleman/middleman.git
-  revision: 00f3400273165893941327ea4ff24b2e59854693
+  revision: 0c739f51e3b083be8ad8f6a44c3126ad94458ae5
   branch: main
   specs:
     middleman (4.6.0)
@@ -74,7 +74,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.3.5)
-    connection_pool (2.5.1)
+    connection_pool (2.5.3)
     contracts (0.17.2)
     dotenv (3.1.8)
     drb (2.2.1)
@@ -99,7 +99,7 @@ GEM
     http_parser.rb (0.8.0)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
-    json (2.10.2)
+    json (2.11.3)
     kramdown (2.5.1)
       rexml (>= 3.3.9)
     language_server-protocol (3.17.0.4)
@@ -132,9 +132,9 @@ GEM
       racc
     parslet (2.0.0)
     prism (1.4.0)
-    public_suffix (6.0.1)
+    public_suffix (6.0.2)
     racc (1.8.1)
-    rack (3.1.13)
+    rack (3.1.14)
     rack-livereload (0.3.17)
       rack
     rackup (2.2.1)
@@ -145,7 +145,7 @@ GEM
       ffi (~> 1.0)
     regexp_parser (2.10.0)
     rexml (3.4.1)
-    rubocop (1.75.2)
+    rubocop (1.75.5)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.1.0)
