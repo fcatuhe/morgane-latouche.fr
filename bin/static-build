@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+
+set -eu
+
+export RAILS_ENV=production
+export RAILS_LOG_LEVEL=warn
+export SECRET_KEY_BASE=dummy
+export SECRET_KEY_BASE_DUMMY=1
+
+bundle exec rails assets:precompile
+
+bundle exec parklife build "$@"
+
+if [ -d public ]; then
+  cp -R public/* build
+fi
+
+find build -type f | sort
