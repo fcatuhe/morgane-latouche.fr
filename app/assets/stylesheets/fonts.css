@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('notosans-variablefont-wdth-wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans Italic';
+  src: url('notosans-italic-variablefont-wdth-wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mistral';
+  src: url('mistral.ttf') format('truetype');
+  font-display: swap;
+}
+
+.notosans-regular {
+  font-family: 'Noto Sans';
+  font-weight: 400;
+}
+.notosans-semibold {
+  font-family: 'Noto Sans';
+  font-weight: 600;
+}
+.notosans-bold {
+  font-family: 'Noto Sans';
+  font-weight: 700;
+}
+.notosans-italic-regular {
+  font-family: 'Noto Sans Italic';
+  font-weight: 400;
+}
+.notosans-italic-semibold {
+  font-family: 'Noto Sans Italic';
+  font-weight: 600;
+}
+.notosans-italic-bold {
+  font-family: 'Noto Sans Italic';
+  font-weight: 700;
+}
+
+.mistral {
+  font-family: 'Mistral';
+}

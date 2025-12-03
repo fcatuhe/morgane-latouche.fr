@@ -1,0 +1,10 @@
+require_relative "config/environment"
+
+Parklife.application.configure do |config|
+  config.nested_index = false
+end
+
+Parklife.application.routes do
+  root crawl: true
+  get not_found_path
+end

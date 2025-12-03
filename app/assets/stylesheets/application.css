@@ -1,0 +1,162 @@
+/*
+ *= require fonts
+ *= require colors
+ *= require_self
+ */
+
+.w-5rem {
+  width: 5rem;
+}
+
+h1,
+.h1 {
+  margin-bottom: 0;
+  padding: 4rem 1rem;
+  text-align: center;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+}
+
+h2,
+.h2 {
+  font-family: "Mistral";
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  margin: 0 0 1rem;
+}
+
+@media (max-width: 991.98px) {
+  h2,
+  .h2 {
+    margin-top: 3rem;
+    font-size: clamp(2.5rem, 6vw, 3rem);
+  }
+}
+
+h3,
+.h3 {
+  text-align: center;
+  font-family: "Noto Sans Italic";
+  font-weight: 400;
+  line-height: 1.5em;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  margin: 0;
+  padding: 2rem 3rem 4rem;
+}
+
+@media (max-width: 991.98px) {
+  h3,
+  .h3 {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    padding: 2rem 3rem 3rem;
+  }
+}
+
+.h4 {
+  text-align: center;
+  font-family: "Noto Sans";
+  font-weight: 400;
+  line-height: 1.5em;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  margin: 0;
+  padding: 3rem;
+}
+
+@media (max-width: 991.98px) {
+  .h4 {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    padding: 2rem;
+  }
+}
+
+p {
+  text-align: start;
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.mb-last-p-0 p:last-child {
+  margin-bottom: 0;
+}
+
+#morgane {
+  flex-grow: 1;
+  background-image: url('morgane_latouche_reflexologue_cancale.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 100vw;
+}
+
+@media (min-width: 992px) {
+  #morgane {
+    min-height: 40vw;
+  }
+}
+
+#cabinet {
+  flex-grow: 1;
+  background-image: url('morgane_latouche_reflexologue_cabinet_cancale.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 100vw;
+}
+
+@media (min-width: 992px) {
+  #cabinet {
+    min-height: 40vw;
+  }
+}
+
+#pieds {
+  flex-grow: 1;
+  background-image: url('morgane_latouche_reflexologie_plantaire_cancale.jpg');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  min-height: 100vw;
+}
+
+@media (min-width: 992px) {
+  #pieds {
+    min-height: 40vw;
+  }
+}
+
+#navbarLogo {
+  opacity: 0;
+}
+
+.overflow-logo {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  opacity: 0.5;
+  height: 80%;
+}
+
+@media (min-width: 992px) {
+  .overflow-logo {
+    left: 10%;
+    opacity: 0.6;
+    height: 90%;
+  }
+}
+
+.text-small {
+  font-size: 0.85rem;
+}
+
+.text-wrap-balance {
+  text-wrap: balance;
+}
+
+.fs-lg-6 {
+  font-size: inherit;
+}
+
+@media (min-width: 992px) {
+  .fs-lg-6 {
+    font-size: 1rem;
+  }
+}

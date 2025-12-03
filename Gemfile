@@ -1,15 +1,22 @@
 source "https://rubygems.org"
 
-gem "middleman", github: "middleman/middleman", branch: :main
-gem "middleman-autoprefixer"
-gem "middleman-blog"
-gem "middleman-livereload"
+gem "rails", "~> 8.1.0"
+gem "propshaft"
+gem "puma", ">= 5.0"
 
-gem "builder"
-gem "kramdown"
-gem "terser"
+gem "tzinfo-data", platforms: %i[ windows jruby ]
+gem "bootsnap", require: false
+
+gem "decant"
+gem "parklife-rails"
+
+group :development, :test do
+  gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
+  gem "bundler-audit", require: false
+  gem "brakeman", require: false
+  gem "rubocop-rails-omakase", require: false
+end
 
 group :development do
-  gem "optional_html", github: "tommysundstrom/middleman-rack-optional-html", branch: :master
-  gem "rubocop-rails-omakase", require: false
+  gem "web-console"
 end

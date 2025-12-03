@@ -1,0 +1,62 @@
+:root {
+  --color-ebony: #42180B;
+  --color-chocolate: #1B0E09;
+  --color-chocolate-light: #703810;
+  --color-wood: #885A38;
+  --color-jute: #DBC8B0;
+  --color-jute-dark: #C2AC91;
+  --color-off-white: #faf9f6;
+}
+
+.text-ebony { color: var(--color-ebony); }
+.text-chocolate { color: var(--color-chocolate); }
+.text-chocolate-light { color: var(--color-chocolate-light); }
+.text-wood { color: var(--color-wood); }
+.text-jute { color: var(--color-jute); }
+.text-jute-dark { color: var(--color-jute-dark); }
+.text-off-white { color: var(--color-off-white); }
+
+.text-bg-chocolate-light {
+  color: var(--color-off-white);
+  background-color: var(--color-chocolate-light);
+}
+
+.bg-off-white {
+  background-color: var(--color-off-white);
+}
+
+.color-block-ebony,
+.color-block-chocolate,
+.color-block-chocolate-light,
+.color-block-wood,
+.color-block-jute,
+.color-block-jute-dark,
+.color-block-off-white {
+  position: absolute;
+  top: -1.5rem;
+  right: 35%;
+  width: 100%;
+  height: calc(100% + 3rem);
+  z-index: 0;
+}
+
+@media (min-width: 992px) {
+  .color-block-ebony,
+  .color-block-chocolate,
+  .color-block-chocolate-light,
+  .color-block-wood,
+  .color-block-jute,
+  .color-block-jute-dark,
+  .color-block-off-white {
+    top: -3rem;
+    height: calc(100% + 6rem);
+  }
+}
+
+.color-block-ebony { background-color: var(--color-ebony); }
+.color-block-chocolate { background-color: var(--color-chocolate); }
+.color-block-chocolate-light { background-color: var(--color-chocolate-light); }
+.color-block-wood { background-color: var(--color-wood); }
+.color-block-jute { background-color: var(--color-jute); }
+.color-block-jute-dark { background-color: var(--color-jute-dark); }
+.color-block-off-white { background-color: var(--color-off-white); }

@@ -1,9 +1,33 @@
 # Ignore bundler config.
-.bundle
+/.bundle
 
-.cache
-.sass-cache
-build/
+# Ignore all environment files.
+/.env*
+!/.env*.erb
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore pidfiles, but keep the directory.
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
+
+# Ignore storage (caching, etc).
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/
+!/tmp/storage/.keep
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+
+# Ignore Parklife build
+/build/
 
 # Ignore MacOS Desktop Services Store files
 .DS_Store

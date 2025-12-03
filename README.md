@@ -1,19 +1,21 @@
 # morgane-latouche.fr
 
-## Editing in Markdown
-
-- Refer to the [Markdown Guide](https://www.markdownguide.org/basic-syntax) for syntax
+Rails static site using Parklife for static generation.
 
 ## Development
 
-- `middleman` (or `dev`) to start server
-- `middleman build -e production` to build as Production environment
-  - `middleman build -e production --verbose`
+```bash
+bin/setup     # Install dependencies
+bin/dev       # Start server at localhost:3000
+```
 
-## Staging
+## Build
 
-- push to `staging` remote will trigger `middleman-deploy-staging` GitHub Action
+```bash
+bin/static-build                    # Build static site to ./build
+bin/static-build --base /subpath    # Build with custom base URL
+```
 
-## Production
+## Deployment
 
-- `middleman-deploy` GitHub Action is restricted to the `main` branch
+Push to `main` triggers GitHub Pages deployment via `parklife.yml` workflow.
