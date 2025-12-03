@@ -31,3 +31,7 @@
 
 # Ignore MacOS Desktop Services Store files
 .DS_Store
+
+# Rails Static
+/build
+content/**/_draft
