@@ -1,5 +1,5 @@
 module Business
-  NAME = "Morgane Crec'hmine Latouche — Réflexologie plantaire thérapeutique".freeze
+  NAME = "Morgane Crec'hmine Latouche - Réflexologie plantaire thérapeutique".freeze
   PRACTITIONER = "Morgane Crec'hmine Latouche".freeze
   JOB_TITLE = "Réflexologue".freeze
 
